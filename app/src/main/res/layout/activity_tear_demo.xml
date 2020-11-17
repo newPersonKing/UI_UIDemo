@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#efefef"
+    tools:context=".TearDemo">
+
+    <com.pengyeah.tear.PaperLayout
+        android:id="@+id/paperLayout3"
+        android:layout_width="match_parent"
+        android:layout_height="600dp"
+        android:padding="70dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <EditText
+            android:id="@+id/et3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:visibility="visible" />
+
+        <TextView
+            android:id="@+id/tv3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/et3"
+            android:layout_centerHorizontal="true"
+            android:text="验证码"
+            android:textSize="56sp"
+            android:visibility="visible" />
+
+        <Button
+            android:id="@+id/btn3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/et3"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:text="NEXT"
+            android:visibility="visible" />
+
+    </com.pengyeah.tear.PaperLayout>
+
+    <com.pengyeah.tear.PaperLayout
+        android:id="@+id/paperLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="600dp"
+        android:padding="70dp"
+        android:visibility="gone"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <EditText
+            android:id="@+id/et2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true" />
+
+        <TextView
+            android:id="@+id/tv2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/et2"
+            android:layout_centerHorizontal="true"
+            android:text="密码"
+            android:textSize="56sp" />
+
+        <Button
+            android:id="@+id/btn2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/et2"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:text="NEXT" />
+
+    </com.pengyeah.tear.PaperLayout>
+
+    <com.pengyeah.tear.PaperLayout
+        android:id="@+id/paperLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="600dp"
+        android:padding="70dp"
+        android:visibility="gone"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <EditText
+            android:id="@+id/et1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true" />
+
+        <TextView
+            android:id="@+id/tv1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/et1"
+            android:layout_centerHorizontal="true"
+            android:text="账号"
+            android:textSize="56sp" />
+
+        <Button
+            android:id="@+id/btn1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/et1"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:text="NEXT" />
+
+    </com.pengyeah.tear.PaperLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

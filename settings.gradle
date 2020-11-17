@@ -1,0 +1,6 @@
+include ':app', ':switchbutton', ':clockview', ':rulerview', ':levelselectview', ':flowview'
+rootProject.name='uidemos'
+include ':electimeview'
+include ':card3d'
+include ':circular'
+include ':tear'
