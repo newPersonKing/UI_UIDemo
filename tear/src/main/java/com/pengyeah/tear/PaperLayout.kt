@@ -19,6 +19,8 @@ import com.pengyeah.tear.utils.BazierUtils
  *  Created by pengyeah on 2020/10/16
  *  佛祖开光，永无bug
  *  God bless U
+ *
+ *  https://mp.weixin.qq.com/s/Zw_fu4FWGs3mKsvGei8Qdw
  */
 class PaperLayout : RelativeLayout {
 
@@ -189,6 +191,7 @@ class PaperLayout : RelativeLayout {
 
     private fun combinePath() {
         if (drawState == DRAW_STATE_INNER) {
+            /*绘制内容Path*/
             contentPath.reset()
             contentPath.moveTo(0F, 0F)
             contentPath.lineTo(pointA.x, pointA.y)
@@ -229,6 +232,7 @@ class PaperLayout : RelativeLayout {
 
             dogEaredPath.op(contentPath, Path.Op.DIFFERENCE)
 
+            /*限制绘制child的区域*/
             childContentPath.reset()
             childContentPath.op(contentPath, Path.Op.UNION)
             childContentPath.offset((width - paperWidth) / 2F, (height - paperHeight) / 2F)
